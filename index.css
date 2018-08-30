@@ -1,0 +1,286 @@
+/*
+* @Author: calasaba
+* @Date:   2018-08-30 17:42:37
+* @Last Modified by:   calasaba
+* @Last Modified time: 2018-08-30 21:08:19
+*/
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(100% + 2 * (100vw - 375px) / 27.5);
+        font-size: calc(12px + 2 * (100vw - 320px) / 27.5);
+    }
+}
+@media screen and (min-width: 375px) {
+    html {
+        /* iPhone6的375px尺寸作为16px基准，414px正好18px大小, 600 20px */
+        font-size: calc(100% + 2 * (100vw - 375px) / 39);
+        font-size: calc(14px + 2 * (100vw - 375px) / 39);
+    }
+}
+@media screen and (min-width: 414px) {
+    html {
+        /* 414px-1000px每增加100像素宽字体增加1px(18px-22px) */
+        font-size: calc(112.5% + 4 * (100vw - 414px) / 586);
+        font-size: calc(16px + 4 * (100vw - 414px) / 586);
+    }
+}
+@media screen and (min-width: 600px) {
+    html {
+        /* 600px-1000px每增加100像素宽字体增加1px(18px-22px) */
+        font-size: calc(125% + 4 * (100vw - 600px) / 400);
+        font-size: calc(18px + 4 * (100vw - 600px) / 400);
+    }
+}
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: calc(137.5% + 6 * (100vw - 1000px) / 1000);
+        font-size: calc(22px + 6 * (100vw - 1000px) / 1000);
+        
+
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Times New Roman", Times, serif;
+}
+html,body{
+    height: 100%;
+    /*font-size: 14px;*/
+}
+.overflow{
+    overflow: auto;
+}
+ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#ccc;
+}
+a:visited{
+    color: #ccc;
+    text-decoration: none;
+}
+button{
+    border: none;
+    outline: none;
+}
+.container{
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+}
+/* header开始 */
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+header{
+    /*height: 85px;*/
+    height: 4.009434rem;
+    /*line-height: 85px;*/
+    line-height: 4.009434rem;
+    background-color: #5fc0cd;
+    /*font-size: 34px;*/
+    font-size: 1.603774rem;
+    text-align: center;
+    vertical-align: middle;
+}
+.bg-map{
+    float: right;
+    /*width: 42px; height: 44px;*/
+    width: 1.981132rem; height: 2.075472rem;
+    background: url('./images/six-six.png')  no-repeat;
+    /*margin: 20px 27px  20px;*/
+    background-size: 1.981132rem 2.075472rem;
+    margin: 0.943396rem 1.273585rem  0.943396rem;
+}
+header button{
+    width: 6.839623rem;
+    /*width: 145px;*/
+    height: 3.301887rem;
+    font-size: 1.603774rem;
+    border: none;
+    border-radius: 4%;
+}
+.find-employer{
+    color: #ffffff;
+    background-color: #55a8b3;
+}
+.find-carer{
+    color: #5fc0cd;
+    background-color: #fff;
+    margin-left:-0.707547rem;
+}
+/* main 开始 */
+main{
+    padding-top: 4.009434rem;
+    padding-bottom: 4.622642rem;
+}
+.shaixuan{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 3.679245rem;
+    border-bottom: 1px solid #ccc;
+}
+.btn{
+    width: 33.3%;
+    text-align: center;
+    border-right: 1px solid #ccc;  
+    font-size:1.320755rem;
+    color: #999999;
+    position: relative;
+}
+.one{
+    width: 100%;
+    position: absolute;
+    right:-999rem;
+    /*top:45px;*/
+    padding: 0;
+    background-color: #f8fafb;
+    font-size:1.226415rem;
+    /*display: inline-block;*/
+    margin-top: 1px;
+}
+.one li{
+
+    font-size:1.132075rem;
+    border-bottom: 1px solid #ccc;
+    line-height: 1.603774rem;
+    text-align: right;
+    padding-right: 10%;
+}
+.btn:hover .one{
+    right:0;
+}
+/*.btn:active .one{
+    right:0;
+}*/
+.one li:hover a:hover{
+    display: block;
+    background:#ddd;
+    color: #000;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    line-height: 0;
+    display: inline-block;
+    border: 0.377358rem solid transparent;
+    border-top-color: #ccc;
+    border-bottom-width: 0;
+    float: right;
+    margin-right: 0.566038rem;
+    margin-top:0.471698rem;
+}
+
+/* items 开始 */
+.items{
+    border-bottom: 1px solid #ccc;
+}
+.server-date, .address{
+    font-size: 1.226415rem;
+    line-height: 1.226415rem;
+    color: #ccc;    
+}
+.server-date{
+    background: url("./images/six-one01.png") left center no-repeat;
+    background-size: 1.132075rem 1.132075rem;
+    margin-top:1.320755rem;
+    margin-bottom:1.179245rem;
+    margin-left: 1.367925rem;
+    padding-left: 1.839623rem;
+}
+.address{
+    background: url("./images/six-two02.png") left center no-repeat;
+    background-size: 0.896226rem 1.084906rem;
+    margin-top:1.179245rem;
+    margin-bottom:1.320755rem;
+    margin-left:1.509434rem;
+    padding-left: 1.698113rem;
+}
+.date{
+    padding-left:3.207547rem;
+    font-size:1.320755rem;
+    line-height: 1.415094rem;
+    color: #000;
+}
+.date .price{
+    display: block;
+    float: right;
+    margin-right: 1.415094rem;
+    font-size: 1.415094rem;
+    color: #e7471c;
+    background: url('./images/six-arrow.png') right center no-repeat;
+    background-size: 0.896226rem 1.556604rem;
+    padding-right: 1.886792rem;
+}
+
+/* footer 开始*/
+footer{
+    position: fixed;
+    left:0;
+    bottom: 0;
+    height: 4.622642rem;
+    width: 100%;
+    font-size: 0.943396rem;
+    border-top:1px solid  #e2eaec;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background: #f8fafb;
+}
+.home-page,.mine{
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.home-page i{
+    width: 2.169811rem;
+    height: 1.886792rem;
+    background: url("./images/six-three.png") no-repeat;
+    background-size: 2.169811rem  1.886792rem;
+    margin:auto;
+
+}
+.mine i{
+    width: 1.981132rem;
+    height: 1.933962rem;
+    background: url("./images/six-five.png");
+    background-size: 1.981132rem 1.933962rem;
+    margin:auto;
+}
+
+.home-page span,.mine span{
+    line-height: 0.943396rem;
+    margin-top: 0.471698rem;
+}
+.home-page span{
+    color: #5fc0cd;
+}
+.mine span{
+    color: #999999;
+}
+.write{
+    width: 4.009434rem;
+    height: 4.009434rem;
+    background-color: #5fc0cd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.write i{
+    width: 1.886792rem;
+    height: 1.933962rem;
+    background: url("./images/six-four.png");
+    background-size: 1.886792rem 1.933962rem;
+}
+
