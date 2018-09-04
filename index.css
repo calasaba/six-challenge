@@ -2,7 +2,7 @@
 * @Author: calasaba
 * @Date:   2018-08-30 17:42:37
 * @Last Modified by:   calasaba
-* @Last Modified time: 2018-08-30 21:08:19
+* @Last Modified time: 2018-09-04 21:17:21
 */
 @media screen and (min-width: 320px) {
     html {
@@ -76,6 +76,7 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 9999;
 }
 header{
     /*height: 85px;*/
@@ -116,10 +117,12 @@ header button{
 }
 /* main 开始 */
 main{
+    width: 100%;
+    overflow: hidden;
     padding-top: 4.009434rem;
     padding-bottom: 4.622642rem;
 }
-.shaixuan{
+.filtrate{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -128,45 +131,40 @@ main{
     height: 3.679245rem;
     border-bottom: 1px solid #ccc;
 }
-.btn{
-    width: 33.3%;
+.btn{ 
+    width: 33.3%; 
     text-align: center;
-    border-right: 1px solid #ccc;  
+    border-right: 1px solid #ccc; 
     font-size:1.320755rem;
-    color: #999999;
+    color: #999999;   
     position: relative;
 }
-.one{
-    width: 100%;
+.hide{
+    display: none;
+}
+.input_in{
+    text-align: center;
+}
+.btn .city{
     position: absolute;
-    right:-999rem;
-    /*top:45px;*/
-    padding: 0;
-    background-color: #f8fafb;
-    font-size:1.226415rem;
-    /*display: inline-block;*/
-    margin-top: 1px;
-}
-.one li{
-
-    font-size:1.132075rem;
-    border-bottom: 1px solid #ccc;
-    line-height: 1.603774rem;
-    text-align: right;
-    padding-right: 10%;
-}
-.btn:hover .one{
+    top:2.679245rem;
     right:0;
-}
-/*.btn:active .one{
-    right:0;
-}*/
-.one li:hover a:hover{
-    display: block;
-    background:#ddd;
-    color: #000;
-}
+    width: 100%;
+    background-color: #fff;
 
+}
+.btn .city ul{
+    width: 100%;
+    border: 1px solid #d6d6d6; 
+    border-top:none;
+}
+.btn .city ul li{
+    width: 100%;
+    height:3.679245rem;
+    line-height:3.679245rem;
+    cursor: pointer; 
+    text-align: center; 
+}
 .triangle{
     width: 0;
     height: 0;
@@ -210,6 +208,9 @@ main{
     font-size:1.320755rem;
     line-height: 1.415094rem;
     color: #000;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .date .price{
     display: block;
