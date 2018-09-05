@@ -2,7 +2,7 @@
 * @Author: calasaba
 * @Date:   2018-08-30 17:42:37
 * @Last Modified by:   calasaba
-* @Last Modified time: 2018-09-04 21:17:21
+* @Last Modified time: 2018-09-05 07:50:16
 */
 @media screen and (min-width: 320px) {
     html {
@@ -109,6 +109,7 @@ header button{
 .find-employer{
     color: #ffffff;
     background-color: #55a8b3;
+    margin-left: 2.358491rem;
 }
 .find-carer{
     color: #5fc0cd;
